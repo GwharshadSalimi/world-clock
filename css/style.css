@@ -1,4 +1,18 @@
 body {
-  text-align: center;
   background-color: beige;
+}
+
+.framwork {
+  max-width: 600px;
+  background-color: white;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+}
+footer {
+  text-align: center;
 }
