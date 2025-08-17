@@ -8,6 +8,45 @@ body {
   padding: 30px;
   margin: 0 auto;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+select {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.city {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+.city:last-child {
+  border: none;
+}
+
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+
+.date {
+  opacity: 0.7;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 18px;
+  vertical-align: middle;
 }
 
 h1 {
@@ -15,4 +54,5 @@ h1 {
 }
 footer {
   text-align: center;
+  margin-top: 30px;
 }
