@@ -26,10 +26,13 @@ setInterval(update, 1000);
 
 function updateCity(event) {
   let CityTimeZone = event.target.value;
+  if (CityTimeZone === "courent") {
+    CityTimeZone = moment.tz.guess();
+  }
   let cityName = CityTimeZone.split("/")[1];
   let cityTime = moment().tz(CityTimeZone);
   let citesElement = document.querySelector("#cites");
-  citesElement.innerHTML = `<div class="city">
+  citesElement.innerHTML += `<div class="city">
           <div>
             <h2>${cityName}</h2>
             <div class="date">${cityTime.format("MMMM Do YYYY")}  </div>
